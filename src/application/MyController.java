@@ -37,25 +37,50 @@ public class MyController {
 	 
 	
 	if (ahora.compareTo(primavera)<1) {
-		resultado = "se acerca la primavera";
+		Alert alert = new Alert(AlertType.INFORMATION);
+		alert.setTitle("Information Dialog");
+		alert.setHeaderText("Se aleja el invierno");
+		alert.setContentText("se acerca la primavera");
+
+		alert.showAndWait();
+		
 		
 		
 	}else if (ahora.compareTo(verano)<1) {
-		resultado= "se acerca el verano";
+		Alert alert = new Alert(AlertType.INFORMATION);
+		alert.setTitle("Information Dialog");
+		alert.setHeaderText("Se aleja la primavera");
+		alert.setContentText("se acerca el verano");
+
+		alert.showAndWait();
 		
 		
 	}else if (ahora.compareTo(otoño)<1) {
-		resultado= "se acerca el otoño";
+		Alert alert = new Alert(AlertType.INFORMATION);
+		alert.setTitle("Information Dialog");
+		alert.setHeaderText("Se aleja el verano");
+		alert.setContentText("se acerca el otoño");
+
+		alert.showAndWait();
 		
 		
 	}else if (ahora.compareTo(invierno)<1) {
-		resultado = "se acerca el invierno";
+		Alert alert = new Alert(AlertType.INFORMATION);
+		alert.setTitle("Information Dialog");
+		alert.setHeaderText("Se aleja el otoño");
+		alert.setContentText("se acerca el invierno");
+
+		alert.showAndWait();
 		
 		
 	}else  {
-		resultado = "fecha no valida";
+		Alert alert = new Alert(AlertType.ERROR);
+		alert.setTitle("Error Dialog");
+		alert.setHeaderText("Ha habido un error");
+		alert.setContentText("Fecha no valida");
+
+		alert.showAndWait();
 	}
-	result.setText(resultado);
 
 	 
  }
